@@ -6,15 +6,15 @@ class Kint_Parsers_ClassStatics extends kintParser
 		if ( !is_object( $variable ) ) return false;
 
 		if (!defined('PHP_VERSION_ID')) {
-            $version = explode('.', PHP_VERSION);
+			$version = explode('.', PHP_VERSION);
   
-            define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
-        } 
+			define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
+		} 
   
-        if (version_compare(PHP_VERSION, '5.3.0') <= 0) {
-            // We can't support reflection, so bail out.
-            return false;
-        } 
+		if (version_compare(PHP_VERSION, '5.3.0') <= 0) {
+			// We can't support reflection, so bail out.
+			return false;
+		} 
 
 		$extendedValue = array();
 
