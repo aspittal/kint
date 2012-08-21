@@ -1,4 +1,5 @@
 # Kint - debugging helper for PHP developers
+(This fork supports php versions < 5.3)
 
 Kint for PHP is a **zero-setup replacement** for **[var_dump()](http://php.net/manual/en/function.var-dump.php)**, **[print_r()](http://php.net/manual/en/function.print-r.php)** and **[debug_backtrace()](http://php.net/manual/en/function.debug-backtrace.php)**. Extremely easy to use but powerful and customizable.
 
@@ -40,6 +41,9 @@ Kint is an ideological successor _(and a superior alternative)_ to Krumo, which 
 ## Version history
 
 For full changelog [see here](https://github.com/raveren/kint/wiki/Changelog).
+
+** 2012-08-21 **
+  * Added support for PHP versions < 5.3 (removed reflection) 
 
 **v1.0alpha3 2012-07-24**
   * Stay tuned for a detailed changelog in v1 final
